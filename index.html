@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>HTML</title>
+  <title>user settings page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -62,15 +62,18 @@
       <form action="">
         <label for="">
           Old Password
-          <input type="text" placeholder="Please enter old password">
+          <input type="text" required placeholder="Please enter old password">
+          <div id="0" class="error"></div>
         </label>
         <label for="">
           New Password
-          <input type="text" placeholder="Please enter new password">
+          <input type="text" required placeholder="Please enter new password">
+          <div id="1" class="error"></div>
         </label>
         <label for="">
           Confirm Password
-          <input type="text" placeholder="Confirm password">
+          <input type="text" required placeholder="Confirm password">
+          <div id="2" class="error"></div>
         </label>
         <button type="button" class="password-btn">
           Change Password
