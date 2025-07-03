@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <input class="file1" accept="image/*" type="file">
+  <h1 class='title'>User Settings</h1>
+  <div class="tabs">
+    <button id="0" class="tab selected-tab">Account</button>
+    <button id="1" class="tab">Password</button>
+    <button id="2" class="tab">Notifications</button>
+  </div>
+  <div class="display">
+    <section id="account">
+      <div class="avatar">
+        <div class="my-avatar">
+          <img id="avatar-img" src="assets/profile.svg" alt="" />
+        </div>
+        <div class="avatar-prompt">
+          <span class="text">Change your avatar</span>
+          <button class="avatar-btn">Change Avatar</button>
+        </div>
+      </div>
+      <div id="0" class="setting-option info-option">
+        <label class="item">Username</label>
+        <span class="flex info-edit">
+          <span class="info">Haqiim</span>
+          <button class="edit" type="button">
+            <img src="assets/edit.svg" alt="">
+          </button>
+        </span>
+      </div>
+      <div id="1" class="setting-option info-option">
+        <label class="item">Email</label>
+        <span class="flex info-edit">
+          <span class="info">jaybiddy.jh@gmail.com</span>
+          <button class="edit" type="button">
+             <img src="assets/edit.svg" alt="">
+          </button>
+        </span>
+      </div>
+      <div id="2" class="setting-option2 info-option">
+        <div class="bio-head">
+          <label class="item">Bio</label>
+           <button class="edit" type="button">
+             <img src="assets/edit.svg" alt="">
+            </button>
+        </div>
+        <p class="bio">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda at inventore dolorum minus vitae nulla cum ex excepturi quasi modi.
+        </p>
+      </div>
+    </section>
+    <section id="password">
+      <form action="">
+        <label for="">
+          Old Password
+          <input type="text" placeholder="Please enter old password">
+        </label>
+        <label for="">
+          New Password
+          <input type="text" placeholder="Please enter new password">
+        </label>
+        <label for="">
+          Confirm Password
+          <input type="text" placeholder="Confirm password">
+        </label>
+        <button type="button" class="password-btn">
+          Change Password
+        </button>
+      </form>
+    </section>
+    <section id="notifications">
+      <form action="">
+        <div class="setting-option">
+          <label class="notification-item">Toggle Email Notifications</label>
+          <input type="checkbox">
+        </div>
+        <div class="setting-option">
+          <label class="notification-item">Toggle Push Notifications</label>
+          <input type="checkbox">
+        </div>
+        <div class="setting-option2">
+          <label class="notification-item frequency">Email Notifications Frequency</label>
+          <div class="frequency-options">
+            <label class="label2" for="">
+              Immediate
+            <input type="radio" name="notification-frequency">
+            </label>
+            <label class="label2" for="">
+              Daily
+            <input type="radio" name="notification-frequency">
+            </label>
+            <label class="label2" for="">
+              Weekly
+            <input type="radio" name="notification-frequency">
+            </label>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div class="cover">
+    <div class="editor-card">
+      <button class="close">
+        <img src="assets/close.svg" alt="">
+      </button>
+      <div class="content"></div>
+    </div>
+  </div>
+  <form id="0 hidden" action="">
+    <label for="">
+      Change Username
+      <input type="text" name="username">
+    </label>
+  </form>
+  <form id="1 hidden" action="">
+     <label for="">
+      Change Email
+      <input type="text" name="email">
+    </label>
+  </form>
+  <form id="2 hidden" action="">
+    <label for="">
+      Change Bio
+      <textarea name="" id=""></textarea>
+    </label>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
