@@ -9,10 +9,32 @@ const myAvatar = document.querySelector('.my-avatar')
 const cover = document.querySelector('.cover')
 const closeBtn = document.querySelector('.close')
 const content = document.querySelector('.content')
+const namie = document.querySelector('#name')
+const mail = document.querySelector('#mail')
+const bio2 = document.querySelector('#bio2')
+const username = document.querySelector('#username')
+const email = document.querySelector('#email')
+const bio = document.querySelector('#bio')
+const saveBtns = [...document.querySelectorAll('.save')]
 
 avatarBtn.onclick = () => {
     imageFile.click()
 }
+
+saveBtns.forEach(btn =>{
+    btn.onclick = () => {
+        const id = Number(btn.id)
+
+        switch(id){
+            case 0: {namie.textContent = username.value};break;
+            case 1: {mail.textContent = email.value};break;
+            case 2: {bio2.textContent = bio.value};break;
+            default: return
+        }
+        
+        cover.style.display = "none"
+    }
+})
 
 closeBtn.onclick = () => {
     cover.style.display = 'none'

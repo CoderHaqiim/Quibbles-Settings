@@ -31,7 +31,7 @@
       <div id="0" class="setting-option info-option">
         <label class="item">Username</label>
         <span class="flex info-edit">
-          <span class="info">Haqiim</span>
+          <span class="info" id="name">Haqiim</span>
           <button class="edit" type="button">
             <img src="assets/edit.svg" alt="">
           </button>
@@ -40,7 +40,7 @@
       <div id="1" class="setting-option info-option">
         <label class="item">Email</label>
         <span class="flex info-edit">
-          <span class="info">jaybiddy.jh@gmail.com</span>
+          <span class="info" id="mail">jaybiddy.jh@gmail.com</span>
           <button class="edit" type="button">
              <img src="assets/edit.svg" alt="">
           </button>
@@ -53,7 +53,7 @@
              <img src="assets/edit.svg" alt="">
             </button>
         </div>
-        <p class="bio">
+        <p class="bio" id="bio2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda at inventore dolorum minus vitae nulla cum ex excepturi quasi modi.
         </p>
       </div>
@@ -118,23 +118,23 @@
   <form id="0" class="hidden" action="">
     <label for="">
       Enter new username
-      <input type="text" name="username">
+      <input type="text" id="username" name="username">
     </label>
-    <button class="save">Save</button>
+    <button id="0" type="button" class="save">Save</button>
   </form>
   <form id="1" class="hidden" action="">
      <label for="">
       Enter new email
-      <input type="text" name="email">
+      <input type="text" id="email" name="email">
     </label>
-    <button class="save">Save</button>
+    <button id="1" type="button" class="save">Save</button>
   </form>
   <form id="2" class="hidden"  action="">
     <label for="">
       Change Bio
-      <textarea name="" id=""></textarea>      
+      <textarea name="bio" id="bio"></textarea>      
     </label>
-    <button class="save">Save</button>
+    <button id="2" type="button" class="save">Save</button>
   </form>
 
   <script src="main.js"></script>
