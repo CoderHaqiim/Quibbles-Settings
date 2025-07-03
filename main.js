@@ -51,6 +51,13 @@ tabs.forEach(tab => {
 accountSettingsItems.forEach(item => {
     item.onclick = () => {
         cover.style.display ="flex"
-        console.log(item.id)
+        const id = Number(item.id)
+        
+        while(content.firstChild){
+            content.firstChild.remove()
+        }
+
+        hidden[id].style.display ="flex"
+        content.append(hidden[id])
     }
 })
